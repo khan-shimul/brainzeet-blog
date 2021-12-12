@@ -5,21 +5,11 @@ import Header from '../Header/Header';
 import './Banner.css';
 
 const Banner = () => {
-    const theme = createTheme();
 
-    theme.typography.h3 = {
-        fontSize: '1.2rem',
-        '@media (min-width:600px)': {
-            fontSize: '0.7rem',
-        },
-        [theme.breakpoints.up('md')]: {
-            fontSize: '5.25rem',
-        },
-    };
     return (
         <Box component="section" className="banner">
             <Container>
-                <Header />
+                {/* <Header /> */}
                 <Grid
                     container
                     display="flex"
@@ -34,9 +24,9 @@ const Banner = () => {
                         <Typography variant="body1" sx={{ color: '#fff' }}>
                             We have created a new product that will help designers, <br /> developers and companies create websites for their startups <br /> quickly and easily.
                         </Typography>
-                        <Box sx={{ mt: 5 }}>
-                            <RegularButton sx={{ background: '#fff', color: '#4a148c', mr: 2 }} >Learn More</RegularButton>
-                            <RegularButton sx={{ background: 'transparent', color: '#fff' }} >Learn More</RegularButton>
+                        <Box component="div" sx={{ mt: 5 }}>
+                            <RegularButton sx={{ color: '#4a148c', mr: 2 }} >Learn More</RegularButton>
+                            <RegularButton sx={{ background: 'transparent', color: '#fff', border: 1 }} >Learn More</RegularButton>
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={4}>

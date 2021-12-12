@@ -1,10 +1,39 @@
-import React from 'react';
+import * as React from 'react';
+import AppBar from '@mui/material/AppBar';
+import Box from '@mui/material/Box';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+import Button from '@mui/material/Button';
+import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
+import RegularButton from '../../../StyledComponent/RegularButton';
 
 const Header = () => {
     return (
-        <div>
-            <p style={{ color: 'white', margin: 0 }}>This is header</p>
-        </div>
+        <Box sx={{ flexGrow: 1 }}>
+            <AppBar style={{ background: 'transparent', boxShadow: "none" }} position="static">
+                <Toolbar>
+                    <IconButton
+                        size="large"
+                        edge="start"
+                        color="inherit"
+                        aria-label="menu"
+                        sx={{ mr: 2 }}
+                    >
+                        <MenuIcon />
+                    </IconButton>
+                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                        News
+                    </Typography>
+                    <Button color="inherit">Get App</Button>
+                    <Button color="inherit">Features</Button>
+                    <Button color="inherit">About</Button>
+                    <Button color="inherit">F.A.Q.</Button>
+                    <Button color="inherit">Sign In</Button>
+                    <RegularButton sx={{ p: 2, color: '#4a148c' }}>Sign Up</RegularButton>
+                </Toolbar>
+            </AppBar>
+        </Box>
     );
 };
 

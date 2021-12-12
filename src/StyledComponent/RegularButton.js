@@ -1,15 +1,11 @@
-import { Button } from "@mui/material";
-import { styled } from "@mui/styles";
+import { styled } from "@mui/system";
+import Button from '@mui/material/Button';
 
 const RegularButton = styled(Button)({
-    fontWeight: '700',
+    background: 'linear-gradient(90deg,#fff,#fff)',
     padding: '17px 30px',
-    border: '2px solid #fff',
-    borderRadius: '100px',
-    '&:hover': {
-        // background: '#fff'
-        color: '#fff'
-    },
-});
+    fontWeight: 700,
+    borderRadius: '100px'
+})
 
 export default RegularButton;
