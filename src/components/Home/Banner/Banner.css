@@ -1,0 +1,24 @@
+.banner {
+    /* background-image: url("../../../images/banner/banner.jpg"),
+      linear-gradient(rgba(169, 169, 170, 0.5), rgba(40, 42, 119, 0.5)); */
+      background: linear-gradient(359.72deg, rgba(72, 43, 231, 0.73) 0.25%, rgba(0, 0, 0, 0.23) 99.77%), url("../../../images/banner/banner.jpg");
+    height: 780px;
+    width: 100%;
+    /* border: 1px solid red; */
+    /* background-blend-mode: overlay; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  .title {
+    color: white;
+    font-weight: bold;
+    font-size: 59px;
+  }
+  .about-btn {
+    background-color: #ff0505;
+    outline: none;
+    border: none;
+    padding: 17px 34px;
+    color: white;
+  }
