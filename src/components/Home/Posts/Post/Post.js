@@ -26,7 +26,7 @@ export default function Post({ blog }) {
     const { blogContainer } = useStyles();
 
     return (
-        <Grid item xs={12} sm={12} md={4}>
+        <Grid item xs={12} sm={12} md={6}>
             <Card
                 className={blogContainer}>
                 <CardMedia
@@ -43,7 +43,7 @@ export default function Post({ blog }) {
                         {description}
                     </Typography>
                 </CardContent>
-                <Divider sx={{ background: '#9e9e9e' }} />
+                <Divider sx={{ background: '#9e9e9e', mt: 3 }} />
                 <CardActions disableSpacing>
                     <IconButton aria-label="add to favorites">
                         <FavoriteIcon sx={{ color: '#fff' }} />

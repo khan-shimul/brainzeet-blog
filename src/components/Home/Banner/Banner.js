@@ -13,10 +13,10 @@ const theme = createTheme();
 theme.typography.h1 = {
     fontSize: '2.5rem',
     '@media (min-width:600px)': {
-        fontSize: '0.5rem',
+        fontSize: '2.5rem',
     },
     [theme.breakpoints.up('md')]: {
-        fontSize: '4rem',
+        fontSize: '4.5rem',
     },
 };
 
