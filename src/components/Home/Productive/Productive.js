@@ -18,7 +18,7 @@ const Productive = () => {
     return (
         <Box component="section">
             <Container>
-                <Grid container spacing={2} sx={{ mx: 'auto', alignItems: 'center', py: 5 }}>
+                <Grid container spacing={2} sx={{ mx: 'auto', alignItems: 'center', py: 6 }}>
                     <Grid item xs={12} sm={12} md={6}
                         sx={{ display: 'flex', alignItems: 'center' }}
                     >
@@ -34,7 +34,7 @@ const Productive = () => {
                             </Typography>
                         </Box>
                     </Grid>
-                    <Grid item className={singUpBtn} xs={12} sm={12} md={6} sx={{ display: 'flex', alignItems: 'baseline', justifyContent: 'flex-end' }}>
+                    <Grid item className={singUpBtn} xs={12} sm={12} md={6} sx={{ display: 'flex', alignItems: 'baseline', justifyContent: 'flex-end', }}>
                         <Button variant="outlined">
                             Sign Up
                         </Button>
