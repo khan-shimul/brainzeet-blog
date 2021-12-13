@@ -39,7 +39,7 @@ const Banner = () => {
         <ThemeProvider theme={theme}>
             <Box component="section" className={root}>
                 <Container>
-                    {/* <Header /> */}
+                    <Header />
                     <Grid
                         container
                         display="flex"
