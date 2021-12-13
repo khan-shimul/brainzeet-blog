@@ -12,7 +12,7 @@ const NewsLetter = () => {
             fontSize: '0.5rem',
         },
         [theme.breakpoints.up('md')]: {
-            fontSize: '2.8rem',
+            fontSize: '2.6rem',
             lineHeight: '3.3rem'
         },
     };
@@ -33,6 +33,7 @@ const NewsLetter = () => {
             cursor: 'pointer',
             borderTopRightRadius: '5px',
             borderBottomRightRadius: '5px',
+            fontFamily: 'inherit'
 
         },
         newsMail: {

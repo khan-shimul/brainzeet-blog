@@ -36,10 +36,10 @@ export default function Post({ blog }) {
                     alt="Paella dish"
                 />
                 <CardContent>
-                    <Typography variant="h4" sx={{ color: '#fff', fontWeight: 500, pt: 3 }}>
+                    <Typography variant="h4" sx={{ color: '#fff', fontWeight: 500, pt: 3, fontFamily: 'inherit', lineHeight: 1.2 }}>
                         A Guide To <br /> Rocky <br />Mountain
                     </Typography>
-                    <Typography variant="body2" sx={{ color: '#fff', pt: 2 }}>
+                    <Typography variant="body2" sx={{ color: '#fff', pt: 2, fontSize: 15, fontFamily: 'inherit', lineHeight: 1.5 }}>
                         {description}
                     </Typography>
                 </CardContent>

@@ -33,7 +33,7 @@ const Category = ({ category }) => {
                 className={categoryContainer}>
                 <Box component="div" className={content}>
                     <Box>
-                        <Typography variant="h4" sx={{ color: '#fff', fontWeight: 600 }}>
+                        <Typography variant="h4" sx={{ color: '#fff', fontWeight: 600, fontFamily: 'inherit' }}>
                             {title}
                         </Typography>
                     </Box>

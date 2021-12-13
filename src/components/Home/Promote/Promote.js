@@ -37,7 +37,7 @@ const Promote = () => {
                     <Typography variant='h4' sx={{ color: '#4a148c', textAlign: 'center', fontWeight: 700, mt: 3, mb: 1 }}>
                         Better Landing for Your Startup
                     </Typography>
-                    <Typography variant='body2' sx={{ color: '#757575', textAlign: 'center', lineHeight: 1.5 }}>
+                    <Typography variant='body2' sx={{ color: '#757575', textAlign: 'center', lineHeight: 1.8, fontFamily: 'inherit' }}>
                         We have created a new product that will help designers, developers and companies create websites for their startups quickly and easily.
                     </Typography>
                 </Box>

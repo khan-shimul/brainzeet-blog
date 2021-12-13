@@ -27,7 +27,7 @@ const Posts = () => {
     return (
         <Box component="section" sx={{ pb: 5 }}>
             <MyContainer className={mobileContainer}>
-                <Typography variant="h4" sx={{ textAlign: 'center', fontWeight: 600, color: '#4a148c', my: 4 }}>Posts</Typography>
+                <Typography variant="h4" sx={{ textAlign: 'center', fontWeight: 600, color: '#4a148c', my: 4, fontFamily: 'inherit' }}>Posts</Typography>
                 <Box component="div">
                     {
                         blogs.length < 1 ? <CircularProgress sx={{ display: 'flex', mx: 'auto' }} /> :

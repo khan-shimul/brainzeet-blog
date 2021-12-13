@@ -33,7 +33,7 @@ const Categories = () => {
         <Box component="section">
             <MyContainer className={mobileContainer}>
                 <Box component="div" sx={{ my: 3 }}>
-                    <Typography variant="h4" sx={{ color: '#4a148c', fontWeight: 600, textAlign: 'center', my: 3 }}>Category</Typography>
+                    <Typography variant="h4" sx={{ color: '#4a148c', fontWeight: 600, textAlign: 'center', my: 3, fontFamily: 'inherit' }}>Category</Typography>
                     <Grid container rowSpacing={{ xs: 2, sm: 2, md: 4 }} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                         {
                             categories.map(category => <Category

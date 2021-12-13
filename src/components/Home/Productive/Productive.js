@@ -50,17 +50,17 @@ const Productive = () => {
                             <img src={listIcon} alt="" />
                         </Box>
                         <Box>
-                            <Typography variant="h5" sx={{ color: '#4a148c', fontWeight: 600 }}>
+                            <Typography variant="h5" sx={{ color: '#4a148c', fontWeight: 600, fontFamily: 'inherit' }}>
                                 Be more productive
                             </Typography>
-                            <Typography variant="body2">
+                            <Typography variant="body1" sx={{ color: '#9e9e9e', fontFamily: 'inherit' }}>
                                 Lookback is free to try for 14 days
                             </Typography>
                         </Box>
                     </Grid>
                     <Grid item className={singUpBtnBox} xs={12} sm={12} md={6} sx={{ display: 'flex', alignItems: 'baseline', justifyContent: 'flex-end', }}>
                         <Box component="div" sx={{ pr: 3 }}>
-                            <Button className={singUpBtn}>
+                            <Button className={singUpBtn} sx={{ fontFamily: 'inherit' }}>
                                 Sign Up
                             </Button>
                         </Box>
