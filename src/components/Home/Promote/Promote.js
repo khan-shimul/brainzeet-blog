@@ -21,7 +21,7 @@ const Promote = () => {
 
     return (
         <ThemeProvider theme={theme}>
-            <Box component="section" sx={{ width: 2 / 4, mx: 'auto', my: 5 }}>
+            <Box component="section" sx={{ width: 2 / 4, mx: 'auto', my: 6 }}>
                 <Box sx={{ display: 'flex', justifyContent: 'center' }}>
                     <Box component="div" sx={{ color: '#4a148c', fontSize: '25px', mr: 5 }}>
                         <i className="fas fa-code"></i>

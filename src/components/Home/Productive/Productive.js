@@ -42,7 +42,7 @@ const Productive = () => {
     return (
         <Box component="section">
             <MyContainer className={mobileContainer}>
-                <Grid container spacing={2} sx={{ mx: 'auto', alignItems: 'center', py: 6 }}>
+                <Grid container spacing={2} sx={{ mx: 'auto', alignItems: 'center', py: 8 }}>
                     <Grid item xs={12} sm={12} md={6}
                         sx={{ display: 'flex', alignItems: 'center' }}
                     >

@@ -1,4 +1,4 @@
-import { Box, Container, Grid, useTheme } from '@mui/material';
+import { Box, Container, Grid } from '@mui/material';
 import { makeStyles } from '@mui/styles';
 import React from 'react';
 import RegularButton from '../../../StyledComponent/RegularButton';

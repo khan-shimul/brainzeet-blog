@@ -7,7 +7,7 @@ import Button from '@mui/material/Button';
 import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { makeStyles } from '@mui/styles';
-import { useTheme } from '@mui/material';
+import { Divider, useTheme } from '@mui/material';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -49,7 +49,7 @@ const Header = () => {
         }
     });
 
-    const { singUpButton, navToggle, navMenu, logo, navDrawer } = useStyles();
+    const { singUpButton, navToggle, navMenu, logo } = useStyles();
 
     // mobile nav drawer
     const [toggle, setToggle] = React.useState(false);
@@ -62,21 +62,27 @@ const Header = () => {
                 <ListItem button >
                     <ListItemText>Get App</ListItemText>
                 </ListItem>
+                <Divider />
                 <ListItem button >
                     <ListItemText>Features</ListItemText>
                 </ListItem>
+                <Divider />
                 <ListItem button >
                     <ListItemText>About</ListItemText>
                 </ListItem>
+                <Divider />
                 <ListItem button >
                     <ListItemText>F.A.Q.</ListItemText>
                 </ListItem>
+                <Divider />
                 <ListItem button >
                     <ListItemText>Sign In</ListItemText>
                 </ListItem>
+                <Divider />
                 <ListItem button >
                     <ListItemText>Sign Up</ListItemText>
                 </ListItem>
+                <Divider />
             </List>
         </Box>
     );
@@ -112,7 +118,6 @@ const Header = () => {
             <div>
                 <React.Fragment>
                     <Drawer
-                        // className={navDrawer}
                         open={toggle}
                         onClose={() => setToggle(false)}
                     >
