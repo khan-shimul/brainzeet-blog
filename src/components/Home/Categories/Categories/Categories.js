@@ -21,7 +21,7 @@ const Categories = () => {
             <Container>
                 <Typography variant="h4" sx={{ color: '#4a148c', fontWeight: 600, textAlign: 'center' }}>Category</Typography>
                 <Box component="div" sx={{ my: 3 }}>
-                    <Grid container spacing={2}>
+                    <Grid container rowSpacing={{ xs: 2, sm: 2, md: 3 }} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                         {
                             categories.map(category => <Category
                                 key={category.id}
