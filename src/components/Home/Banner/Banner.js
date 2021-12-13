@@ -16,7 +16,7 @@ theme.typography.h1 = {
         fontSize: '2.5rem',
     },
     [theme.breakpoints.up('md')]: {
-        fontSize: '4.5rem',
+        fontSize: '4.2rem',
     },
 };
 
@@ -48,7 +48,7 @@ const Banner = () => {
                         alignItems="center"
                         minHeight="100vh">
                         <Grid item xs={11} sm={11} md={8}>
-                            <Typography variant="h1" sx={{ lineHeight: 1.2, color: '#fff', fontWeight: 700, mb: 2 }}>
+                            <Typography variant="h1" sx={{ lineHeight: 1.2, color: '#fff', fontWeight: 700, mb: 2, mt: -5 }}>
                                 Startup <br /> Framework.
                                 Suit <br /> Up Your Startup
                             </Typography>
