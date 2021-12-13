@@ -17,6 +17,14 @@ import ListItemText from '@mui/material/ListItemText';
 const Header = () => {
     const theme = useTheme();
     const useStyles = makeStyles({
+        singUpButton: {
+            background: '#fff !important',
+            color: '#482BE7 !important',
+            padding: '7px 15px !important',
+            borderRadius: '100px !important',
+            fontWeight: '600 !important',
+            marginLeft: '12px !important'
+        },
         navToggle: {
             [theme.breakpoints.up('sm')]: {
                 display: 'none !important'
@@ -25,7 +33,10 @@ const Header = () => {
         navMenu: {
             [theme.breakpoints.down('sm')]: {
                 display: 'none !important'
-            }
+            },
+            [theme.breakpoints.up('sm')]: {
+                marginTop: '40px'
+            },
         },
         logo: {
             [theme.breakpoints.down('sm')]: {
@@ -39,7 +50,7 @@ const Header = () => {
         }
     });
 
-    const { navToggle, navMenu, logo, navDrawer } = useStyles();
+    const { singUpButton, navToggle, navMenu, logo, navDrawer } = useStyles();
 
     // mobile nav drawer
     const [toggle, setToggle] = React.useState(false);
@@ -64,6 +75,9 @@ const Header = () => {
                 <ListItem button >
                     <ListItemText>Sign In</ListItemText>
                 </ListItem>
+                <ListItem button >
+                    <ListItemText>Sign Up</ListItemText>
+                </ListItem>
             </List>
         </Box>
     );
@@ -84,15 +98,15 @@ const Header = () => {
                         <MenuIcon />
                     </IconButton>
                     <Typography className={logo} variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        News
+                        {/* Logo */}
                     </Typography>
                     <Box className={navMenu}>
-                        <Button color="inherit">Get App</Button>
-                        <Button color="inherit">Features</Button>
-                        <Button color="inherit">About</Button>
-                        <Button color="inherit">F.A.Q.</Button>
-                        <Button color="inherit">Sign In</Button>
-                        <RegularButton sx={{ p: 2, color: '#4a148c' }}>Sign Up</RegularButton>
+                        <Button color="inherit" sx={{ fontWeight: 500 }}>Get App</Button>
+                        <Button color="inherit" sx={{ fontWeight: 500 }}>Features</Button>
+                        <Button color="inherit" sx={{ fontWeight: 500 }}>About</Button>
+                        <Button color="inherit" sx={{ fontWeight: 500 }}>F.A.Q.</Button>
+                        <Button color="inherit" sx={{ fontWeight: 500 }}>Sign In</Button>
+                        <Button className={singUpButton}>Sign Up</Button>
                     </Box>
                 </Toolbar>
             </AppBar>
